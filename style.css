@@ -1,0 +1,50 @@
+:root {
+    --primary-color: rgb(38, 131, 198);
+
+}
+
+body {
+    margin: 0;
+}
+
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.form-container {
+    display: flex;
+    
+}
+
+.image-banner{
+    background-image: url("assetts/IMG_6042.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 40%;
+}
+
+.form-container {
+    width: 60%;
+}
+
+.hero-banner {
+    background-color: rgba(0,0,0, .7);
+    display: flex;
+    flex-flow: row wrap;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: relative;
+    top: 25vh;
+    font-family: 'Cinzel', serif;
+}
+
+.odin-icon {
+    max-height: 100px;
+    padding: 25px;
+}
