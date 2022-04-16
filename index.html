@@ -38,6 +38,22 @@
                         <input type="text" id="secondName" name="secondName" pattern="[a-zA-Z-/']{0,30}" placeholder="Smith" required>
                         <label for="secondName">Surname</label>
                     </div>
+                    <div class="input-group">
+                        <input type="email" id="email" name="email"  placeholder="youremail@domain.com" required>
+                        <label for="email">Email</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="phone" id="phone" name="phone"  placeholder="07453765122" pattern="07[0-9]{9}" >
+                        <label for="phone">Phone Number</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="password" name="password"  placeholder="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                        <label for="phone">Password</label>
+                    </div>
+                    <div class="input-group">
+                        <input type="password" id="confirmPassword" name="confirmPassword"  placeholder="" pattern="^(?=.*[A-Za-z])(?=.*\d)[A-Za-z\d]{8,}$" required>
+                        <label for="confirmPassword">Confirm Password</label>
+                    </div>
                 </form>
 
             </div>
