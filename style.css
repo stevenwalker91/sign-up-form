@@ -59,7 +59,6 @@ body {
 .form-container {
     flex: 0 0 60vw;
     flex-flow: column nowrap;
-    justify-content: space-around;
     background-color: #F9FAFB;   
 }
 
@@ -137,6 +136,23 @@ input:required+label:after{
 .input-group {
       display: flex;
       flex-flow: column-reverse nowrap;
+}
+
+button {
+    background-color: white;
+    box-shadow: none;
+    cursor: pointer;
+    border: 2px solid var(--primary-color);
+    color: var(--primary-color);
+    padding: 10px 25px;
+    font-weight: bold;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+
+}
+
+p {
+    padding: 10px 0px;
 }
 
 @media only screen and (max-width: 800px) {
