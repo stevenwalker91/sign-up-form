@@ -19,22 +19,27 @@ body {
 .main {
     display: flex;
     flex-flow: row wrap;
-    justify-content: space-between;
+
     height: 100vh;
 }
+
+
 
 .form-container, .image-banner {
     display: flex;
 }
 
 .image-banner {
-    flex-flow: column wrap;
-    width: 40vw;
+    flex-flow: column nowrap;
+    flex: 0 0 40vw;
+  
 }
 
 .image {
     background-size: cover;
     height: 50vh;
+    background-position: center;
+    background-size: no-repeat;
 }
 
 .image-one {
@@ -46,7 +51,8 @@ body {
 }
 
 .form-container {
-    width: 60%;
+    flex: 0 0 60vw;
+    
 }
 
 .hero-banner {
@@ -68,3 +74,21 @@ body {
 .accent {
     color: var(--primary-color)
 }
+
+@media only screen and (max-width: 650px) {
+    .main {
+      flex-flow: column nowrap;
+    }
+
+    .image-banner {
+        height: 45vh;
+    }
+
+    .image-two {
+        display: none;
+    }
+    .hero-banner {
+        top: 35vh;
+    }
+
+  }
