@@ -47,6 +47,9 @@ body {
 
 .image-one {
     background-image: url("assetts/a27d567d-b3bd-4cb3-b28d-b8465a480ec5.jpg");
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .image-two {
@@ -63,18 +66,17 @@ body {
 .hero-banner {
     background-color: rgba(0,0,0, .7);
     display: flex;
-    flex-flow: row wrap;
+    flex-flow: column nowrap;
     color: white;
-    justify-content: center;
     align-items: center;
     width: 100%;
-    position: relative;
-    top: 45vh;
     font-family: 'little_pawsregular';
     font-size: 25px;
-    text-align: center;
-    height: 10vh;
+    padding: 25px 0vh;
+}
 
+h1 {
+    margin: 0px;
 }
 
 .accent {
@@ -150,8 +152,9 @@ input:required+label:after{
         display: none;
     }
     .hero-banner {
-        top: 35vh;
+        top: 27vh;
         font-size: 22px;
+        padding: 2vh 0vh;
     }
     form {
         flex-flow: column nowrap;
