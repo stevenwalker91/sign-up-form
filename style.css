@@ -23,17 +23,26 @@ body {
     height: 100vh;
 }
 
-.form-container {
+.form-container, .image-banner {
     display: flex;
-    
 }
 
-.image-banner{
-    background-image: url("assetts/a27d567d-b3bd-4cb3-b28d-b8465a480ec5.jpg");
+.image-banner {
+    flex-flow: column wrap;
+    width: 40vw;
+}
+
+.image {
     background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    width: 40%;
+    height: 50vh;
+}
+
+.image-one {
+    background-image: url("assetts/a27d567d-b3bd-4cb3-b28d-b8465a480ec5.jpg");
+}
+
+.image-two {
+    background-image: url("assetts/IMG_5920.jpeg");
 }
 
 .form-container {
@@ -49,12 +58,13 @@ body {
     align-items: center;
     width: 100%;
     position: relative;
-    top: 25vh;
+    top: 45vh;
     font-family: 'little_pawsregular';
     font-size: 25px;
+    text-align: center;
 
 }
 
 .accent {
-    color: var(--primary-color);
+    color: var(--primary-color)
 }
