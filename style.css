@@ -19,7 +19,6 @@ body {
 .main {
     display: flex;
     flex-flow: row wrap;
-
     height: 100vh;
 }
 
@@ -52,7 +51,9 @@ body {
 
 .form-container {
     flex: 0 0 60vw;
-    
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    background-color: #F9FAFB;   
 }
 
 .hero-banner {
@@ -68,7 +69,7 @@ body {
     font-family: 'little_pawsregular';
     font-size: 25px;
     text-align: center;
-    max-height: 10vh;
+    height: 10vh;
 
 }
 
@@ -92,5 +93,26 @@ body {
         top: 35vh;
         font-size: 22px;
     }
+
+  }
+
+  .text-area{
+    padding-left: 5vw;
+    height: 30vh;
+  } 
+
+  .non-primary {
+      height: 35vh;
+  }
+
+  .heading {
+      display: flex;
+      flex-flow: column nowrap;
+      justify-content: center;
+  }
+
+  .form {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    background-color: white;
 
   }
