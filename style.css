@@ -1,6 +1,7 @@
 :root {
     --primary-color: rgb(38, 131, 198);
-    --error-color: red;
+    --error-color-primary: rgb(190, 35, 35);
+    --error-color-secondary: rgb(249, 133, 133);
 
 }
 
@@ -116,11 +117,22 @@ body {
 
   input {
       width: 200px;
+      border: none;
+      border-bottom: 1px solid #bcb9b9;
   }
+
+  input:focus:invalid:not(:placeholder-shown) {
+      border-bottom:1px solid var(--error-color-primary);
+      background-color: var(--error-color-secondary);
+  }
+
+  input:invalid:not(:placeholder-shown) {
+    border-bottom:1px solid var(--error-color-primary);
+}
 
   input:required+label:after{
       content: " *";
-      color: var(--error-color);
+      color: var(--error-color-primary);
       font-size: 15px;
   }
 
@@ -151,3 +163,5 @@ body {
     }
 
   }
+
+  
