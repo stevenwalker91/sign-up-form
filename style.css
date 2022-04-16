@@ -3,6 +3,15 @@
 
 }
 
+@font-face {
+    font-family: 'little_pawsregular';
+    src: url('assetts/little-paws-font/littlepaws-8mzqz-webfont.woff2') format('woff2'),
+         url('assetts/little-paws-font/littlepaws-8mzqz-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 body {
     margin: 0;
 }
@@ -20,7 +29,7 @@ body {
 }
 
 .image-banner{
-    background-image: url("assetts/IMG_6042.jpeg");
+    background-image: url("assetts/a27d567d-b3bd-4cb3-b28d-b8465a480ec5.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -41,10 +50,11 @@ body {
     width: 100%;
     position: relative;
     top: 25vh;
-    font-family: 'Cinzel', serif;
+    font-family: 'little_pawsregular';
+    font-size: 25px;
+
 }
 
-.odin-icon {
-    max-height: 100px;
-    padding: 25px;
+.accent {
+    color: var(--primary-color);
 }
