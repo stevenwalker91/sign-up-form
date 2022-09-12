@@ -34,7 +34,7 @@ body {
 
 .image-banner {
     flex-flow: column nowrap;
-    flex: 0 0 40vw;
+    flex: 0 0 40%;
   
 }
 
@@ -57,7 +57,7 @@ body {
 }
 
 .form-container {
-    flex: 0 0 60vw;
+    flex: 0 0 60%;
     flex-flow: column nowrap;
     background-color: #F9FAFB;   
 }
